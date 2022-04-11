@@ -1,0 +1,109 @@
+.personagens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50vh;
+}
+
+.personagens div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.personagem1 , .personagem2{
+    width: 13%;
+    height: 30%;
+    position: relative;
+    transition: all 1.1s ease-in-out;
+}
+
+.personagem1 {
+    transform: translateX(120px) translateY(-200px);
+}
+
+.personagem2{
+    transform: translateX(-120px) translateY(-200px);
+}
+
+.mover_personagens{
+    transform: translateX(0px) translateY(0px) !important;
+}
+
+.down_arrow{
+    width: 10%;
+    height: 20%;
+}
+
+.personagens div > h1 {
+    font-size: 15px;
+}
+
+.jogadores {
+    transition: all 1.2s ease-in-out;
+    position: relative;
+    top: 300px;
+}
+
+.vida_jogador1, .vida_jogador2{
+    transition: all 1.2s ease-in-out;
+    position: relative;
+    margin-bottom: 10px;
+    top: 300px;
+}
+
+.aparecer{
+    top: 0px;
+    animation: float infinite alternate 2.5s;
+}
+
+@keyframes float {
+    from {
+        transform: translatey(15px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+.animacao_de_dano {
+    animation: dano alternate 0.4s;
+}
+
+@keyframes dano {
+    0% {
+        transform: translateX(15px);
+    }
+    33% {
+        transform: translateX(-15px);
+    }
+    66% {
+        transform: translatex(15px);
+    }
+    100% {
+        transform: translateX(-15px)
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .personagem1, .personagem2{
+        width: 25%;
+        height: 25%;
+    }
+    .personagem1 {
+        transform: translateX(-30px) translateY(-200px);
+    }
+    
+    .personagem2{
+        transform: translateX(30px) translateY(-200px);
+    }
+    
+    .mover_personagens{
+        transform: translateX(0px) translateY(0px) !important;
+    }
+    .down_arrow{
+        width: 19%;
+        height: 20%;
+    }
+}
