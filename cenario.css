@@ -8,6 +8,7 @@
     list-style: none;
     font-family: 'Press Start 2P', cursive;
 }
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body{
     background-image: url(./cenario_teste.png);
@@ -25,4 +26,3 @@ body{
         background-size: cover;
     }
 }
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
