@@ -1,0 +1,67 @@
+
+.game_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_title_h1{
+    font-size: 40px;
+    animation: color alternate infinite  4s;
+    transition: all 400ms ease-in-out;
+}
+
+.retirar{
+    transform: scale(0) ;
+}
+
+.play{
+    padding: 10px 60px;
+    position: relative;
+    top: 150px;
+    transition: all 400ms ease-in-out;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width: 600px){
+    .game_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .game_title_h1{
+        position: relative;
+        top: 50px;
+        font-size: 40px;
+        animation: color alternate infinite  4s;
+        transition: all 400ms ease-in-out;
+    }
+    
+    .play{
+        padding: 10px 60px;
+        position: relative;
+        top: 140px;
+        transition: all 400ms ease-in-out;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 7px;
+    }
+    .playmobile{
+        padding: 10px 60px;
+        position: relative;
+        top: 30px;
+        transition: all 400ms ease-in-out;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 7px;
+    }
+}
+
