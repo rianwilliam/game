@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG JavaScript</title>
+    <link rel="shortcut icon" href="./Panda.png">
+    <link rel="stylesheet" href="cenario.css">
+    <link rel="stylesheet" href="personagem.css">
+    <link rel="stylesheet" href="titulo_do_jogo.css">
+    <link rel="stylesheet" href="gameplay.css">
+    <script src="https://kit.fontawesome.com/1c04ec9dcc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="game_title">
+        <h1 class="game_title_h1">RPG Battle</h1>
+        <h5 class="jogador1_venceu"></h5>
+        <h5 class="jogador2_venceu"></h5>
+        <button type="button" class="play">play</button>
+        <button type="button" class="play playmobile" id="jogar_novamente">Jogar Novamente</button>
+    </section>
+    <section class="personagens">
+         <div>
+             <h2 class="vida_jogador1"></h2>
+             <h1 class="jogadores">Jogador 1</h1>
+             <img src="./down-arrow.png" alt="" class="down_arrow jogadores">
+             <img src="./Personagem1.png" alt="" class="personagem1">
+         </div>
+         <div>
+             <h2 class="vida_jogador2"></h2>
+             <h1 class="jogadores">Jogador 2</h1>
+             <img src="./down-arrow.png" alt="" class="down_arrow jogadores">
+             <img src="./Personagem2.png" alt="" class="personagem2">
+            </div>
+        </section>
+        <section id="jogar">
+            <h3 id="player_turn"></h3>
+            <button type="button" id="jogar_button">Jogar</button>
+        </section>
+  
 
+    <script src="antes_do_play.js"></script>
+    <script src="depois_do_play.js"></script>
+</body>
+</html>
