@@ -1,1 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background-image: url(./cenario_teste.png);
+    background-size: contain;
+    min-height: 100vh;
+    background-repeat: repeat-x;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        background-size: cover;
+    }
+}
