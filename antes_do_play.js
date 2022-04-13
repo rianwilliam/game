@@ -23,3 +23,4 @@ play_btn.addEventListener('click', function(){
     vida_jogador2.classList.add('aparecer')
     section_jogar.classList.add('aparecer_botao')
 })
+
