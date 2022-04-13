@@ -13,7 +13,7 @@
 }
 
 .retirar{
-    transform: scale(0) ;
+    transform: scale(0) !important ;
 }
 
 .play{
@@ -25,6 +25,7 @@
     border: none;
     cursor: pointer;
     border-radius: 7px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 @media only screen and (max-width: 600px){
@@ -37,7 +38,7 @@
     
     .game_title_h1{
         position: relative;
-        top: 50px;
+        top: 40px;
         font-size: 40px;
         animation: color alternate infinite  4s;
         transition: all 400ms ease-in-out;
