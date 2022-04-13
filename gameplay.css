@@ -16,6 +16,8 @@
     border-radius: 7px;
     background-color: white;
     cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -43,15 +45,57 @@
 #jogar_novamente{
     transition-delay: 1.2s;
     transform: scale(0);
+    position: relative;
+    top: 50px;
+}
+
+.quantidade_de_dano_p1, .quantidade_de_dano_p2 {
+    margin-bottom: 10px;
+    transition: all 400ms ease-in-out;
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.damage {
+    transition: all 400ms ease-in-out;
+    animation: damage 1.5s linear;
+}
+
+@keyframes damage {
+    0% {
+        opacity: 0.5;
+        transform: translateY(0px);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 0.3;
+        transform: translateY(-50px);
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    #jogar {
+        position: absolute;
+        top: -50%;
+        transition: all 2s ease-in-out;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
     #player_turn{
         font-size: 25px;
     }
     .aparecer_botao{
-        top: 170px !important;
+        top: 100px !important;
     }
+
     .jogador1_venceu {
         font-size: 25px;
         transition: all 400ms ease-in-out;
@@ -63,5 +107,14 @@
         transition: all 400ms ease-in-out;
         transform: scale(0);
     }
+    .vitoria {
+        transition-delay: 1.5s;
+        transform: scale(1) !important;
+    }
+    #jogar_novamente{
+        transition-delay: 1.5s;
+        transform: scale(0);
+    }
+    
 }
 
