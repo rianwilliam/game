@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .personagem1 , .personagem2{
@@ -20,11 +20,11 @@
 }
 
 .personagem1 {
-    transform: translateX(120px) translateY(-200px);
+    transform: translateX(120px) translateY(-210px);
 }
 
 .personagem2{
-    transform: translateX(-120px) translateY(-200px);
+    transform: translateX(-120px) translateY(-210px);
 }
 
 .mover_personagens{
@@ -82,28 +82,38 @@
         transform: translatex(15px);
     }
     100% {
-        transform: translateX(-15px)
+        transform: translateX(0)
     }
 }
 
 @media only screen and (max-width: 600px){
     .personagem1, .personagem2{
-        width: 25%;
+        width: 35%;
         height: 25%;
     }
     .personagem1 {
-        transform: translateX(-30px) translateY(-200px);
+        transform: translateX(-30px) translateY(-170px);
     }
     
     .personagem2{
-        transform: translateX(30px) translateY(-200px);
+        transform: translateX(30px) translateY(-170px);
     }
     
     .mover_personagens{
-        transform: translateX(0px) translateY(0px) !important;
+        transform: translateX(0px) translateY(-5px) !important;
     }
     .down_arrow{
-        width: 23%;
+        width: 19%;
         height: 20%;
+    }
+    .vida_jogador1, .vida_jogador2{
+        transition: all 1.2s ease-in-out;
+        position: relative;
+        margin-bottom: 10px;
+        top: 600px;
+    }
+    .aparecer{
+        top: 0px;
+        animation: float infinite alternate 2.5s;
     }
 }
